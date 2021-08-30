@@ -3,8 +3,10 @@ from __future__ import unicode_literals
 import importlib
 
 BACKENDS = {
+    "blob": ("blob", "blob_backends"),
     "s3": ("s3", "s3_backends"),
-    "s3bucket_path": ("s3", "s3_backends")
+    # "s3bucket_path": ("s3", "s3_backends"),
+    "moto_api": ("core", "moto_api_backends"),
 }
 
 
